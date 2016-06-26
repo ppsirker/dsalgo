@@ -18,7 +18,7 @@ public class FindMinMax
   {
    int num1 = arr[i * 2];
    int num2 = arr[i * 2 + 1];
-   if (arr[i * 2] >= arr[i * 2 + 1])
+   if (num1 >= num2)
    {
     if (num1 > max)
      max = num1;
