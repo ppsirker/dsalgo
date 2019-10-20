@@ -12,11 +12,16 @@ public class SortStack
 	public static void main(String[] args)
 	{
 		Stack<Integer>stack=new Stack<Integer>();
-		stack.push(5);
-		stack.push(3);
-		stack.push(9);
-		stack.push(2);
-		stack.push(6);
+		System.out.println("Number of elements: ");
+		
+		Scanner input = new Scanner(System.in);
+        	int n = input.nextInt();
+        	System.out.println("Enter the elements");
+        	for(int i=0 ;i<n; i++){
+       		     int input1 = input.nextInt();
+       		     stack.push(input1);
+        	}
+	   	System.out.println("Sorted elements");
 		sort(stack);
 		while(!stack.isEmpty())
 		{
